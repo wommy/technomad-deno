@@ -1,5 +1,5 @@
 import { Router } from 'https://deno.land/x/oak/mod.ts'
-import { getProducts, getProduct, addProduct, updateProduct, deleteProduct } from './controllers/products.ts'
+import { getProducts, addProduct, getProduct, updateProduct, deleteProduct } from './controllers/products.ts'
 
 export default new Router()
 	.get('/api/v1/products/', getProducts)

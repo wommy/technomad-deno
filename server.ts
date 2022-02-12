@@ -1,12 +1,11 @@
 import { Application } from 'https://deno.land/x/oak/mod.ts'
 import router from './routes.ts'
-const port = 8080
 
 const app = new Application()
 
 app.use(router.routes())
 app.use(router.allowedMethods())
 
-console.log(`server running on port ${port}`);
+console.log`server running ...`
 
-await app.listen({ port })
+await app.listen({ port: 8080 })
